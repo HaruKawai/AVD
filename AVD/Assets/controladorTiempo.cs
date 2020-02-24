@@ -24,7 +24,7 @@ public class controladorTiempo : MonoBehaviour
         InvokeRepeating("LaunchProjectile2", 0f, 2.0f);
         InvokeRepeating("StopLaunchProjectile2", 0.5f, 2.0f);
 
-        InvokeRepeating("LaunchProjectile3", 5.0f, 10.0f);
+        InvokeRepeating("LaunchProjectile3", 5.0f, 5.0f);
     }
 
     void LaunchProjectile()
