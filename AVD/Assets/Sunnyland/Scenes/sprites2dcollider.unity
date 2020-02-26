@@ -742,26 +742,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2287838f9eebdf344a2a3eb656691f16, type: 3}
---- !u!1 &547953201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8224332421025002688, guid: e48e289c109bc8340b0544e1eb4de160,
-    type: 3}
-  m_PrefabInstance: {fileID: 8224332421253177964}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &547953208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547953201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c503979bb45c3428b40222fb316d24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  deathEffect: {fileID: 0}
 --- !u!1 &606678733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,6 +2515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_JumpForce
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873481678313012099, guid: de46279277c0ce94a901ffe21c940ef1,
+        type: 3}
+      propertyPath: m_AirControl
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6873481678313012100, guid: de46279277c0ce94a901ffe21c940ef1,
         type: 3}
