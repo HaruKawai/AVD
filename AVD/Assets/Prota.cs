@@ -12,10 +12,18 @@ public class Prota : MonoBehaviour
     {
         gameObject.GetComponent<Player2DControll>().damaged = true;
         health -= damage;
-        healthBar.SetSize(health);
+        healthBar.SetHealth(health);
         if(health <=0) {
             Die();
         }
+    }
+    public void TakeFood(int points) 
+    {
+        health += points;
+        if(health >= 100) {
+            health = 100;
+        }
+        healthBar.SetHealth(health);
     }
     void Die() 
     {

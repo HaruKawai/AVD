@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
+  coinValue: 1
+  prota: {fileID: 6873481678313012101, guid: de46279277c0ce94a901ffe21c940ef1, type: 3}
 --- !u!58 &3635681491705749303
 CircleCollider2D:
   m_ObjectHideFlags: 0

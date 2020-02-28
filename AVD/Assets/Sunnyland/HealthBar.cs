@@ -1,16 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    private Transform bar;
-    private void Awake() 
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
+    private void SetMaxHealth(int health)
     {
-        bar =  transform.Find("Bar");
+        slider.maxValue = health;
+        slider.value = health;
+        fill.color = gradient.Evaluate(1f);
     }
-    public void SetSize(float sizeNormalized)
+    public void SetHealth(int health)
     {
-        bar.localScale = new Vector3(sizeNormalized, 1f);
+        slider.value = health;
+        fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }
