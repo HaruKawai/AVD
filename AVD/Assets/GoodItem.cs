@@ -6,6 +6,7 @@ public class GoodItem : MonoBehaviour
 {
     public enum ItemType{ Cherry=0, Gem=1, Frog=2}
     public ItemType Type;
+    public int coinValue = 1; 
     private void Start() {
         GetComponent<Animator>().SetInteger("Type",(int)Type);
     }
@@ -15,5 +16,12 @@ public class GoodItem : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.CompareTag("Player")) PickItem();
+        if((int)Type == 0) {
+            ScoreManager.instance.ChangeFood(coinValue);
+            ScoreManager.instance.PickFood();
+        }else if ((int)Type == 1) {
+            ScoreManager.instance.ChangeDiam(coinValue);
+            ScoreManager.instance.PickDiam();
+        }
     }
 }
