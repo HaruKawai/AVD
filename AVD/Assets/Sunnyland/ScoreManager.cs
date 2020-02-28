@@ -30,7 +30,7 @@ public class ScoreManager : MonoBehaviour
 
     public void ChangeDiam(int coinValue) 
     {
-        scoreDiam += coinValue;
+        scoreDiam = scoreDiam + coinValue;
         textDiam.text = "X" + scoreDiam.ToString();
     }
 
