@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Prota : MonoBehaviour
 {
     public int health = 100;
-    public int damage = 10;
     public GameObject deathEffect;
+    
     public void TakeDamage (int damage)
     {
+        gameObject.GetComponent<Player2DControll>().damaged = true;
         health -= damage;
         if(health <=0) {
             Die();
@@ -18,11 +19,5 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
-    }
-    void OnCollisionEnter2D(Collision2D collision) {
-        Prota prota = collision.gameObject.GetComponent<Prota>();
-        if(prota != null) {
-            prota.TakeDamage(damage);
-        }
     }
 }

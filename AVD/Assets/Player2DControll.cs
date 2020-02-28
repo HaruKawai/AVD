@@ -20,6 +20,7 @@ public class Player2DControll : MonoBehaviour
     bool crouch = false;
     bool climb = false;
     bool isClimbing;
+    public bool damaged = false;
 
     // Update is called once per frame
     void Update()
@@ -41,6 +42,11 @@ public class Player2DControll : MonoBehaviour
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
+        }
+
+        if(damaged) {
+            animator.SetBool("Damaged", true);
+            damaged = false;
         }
 
 
