@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoodItem : MonoBehaviour
 {
-    public enum ItemType{ Cherry=0, Gem=1, Frog=2}
+    public enum ItemType{ Cherry=0, Gem=1}
     public ItemType Type;
     public int coinValue = 1;
     public GameObject prota;
