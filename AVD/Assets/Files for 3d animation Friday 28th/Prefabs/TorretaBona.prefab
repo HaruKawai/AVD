@@ -5778,7 +5778,7 @@ GameObject:
   - component: {fileID: 5189640012296297168}
   m_Layer: 0
   m_Name: TorretaBona
-  m_TagString: Untagged
+  m_TagString: torreta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5869,7 +5869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40900828a28c2f549a9330451ca02a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 100
+  frequency: 10
   BulletPositions:
   - {fileID: 5189640011796691584}
   - {fileID: 5189640012355659046}

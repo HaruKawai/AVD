@@ -17,8 +17,9 @@ public class turretLauncher : MonoBehaviour
 
     void Shoot()
     {
-        // shooting logic
+        
         Instantiate(ballPrefab, transform.position, transform.rotation);
+        
     
     }
 

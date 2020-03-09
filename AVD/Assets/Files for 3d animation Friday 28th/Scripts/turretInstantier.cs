@@ -7,7 +7,7 @@ public class turretInstantier : MonoBehaviour
     public GameObject torretaPrefab;
     public float speed = 5f;
     public int damage = 10;
-    public Rigidbody rb;
+    private Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,6 +20,10 @@ public class turretInstantier : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ground"))
         {
+
+            GameObject[] torretes = GameObject.FindGameObjectsWithTag("torreta");
+            foreach(GameObject torreta in torretes)
+            GameObject.Destroy(torreta);
             Instantiate(torretaPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
             Destroy(gameObject);
         }

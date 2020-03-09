@@ -19,7 +19,7 @@ public class turretShoot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            //Shoot();
         }
     }
 
@@ -30,7 +30,7 @@ public class turretShoot : MonoBehaviour
         Instantiate(bulletPrefab, BulletPositions[i].position, BulletPositions[i].rotation);
         i++;
         if (i >= BulletPositions.Length) i = 0;
-        yield return new WaitForSeconds(frequency);
+        yield return new WaitForSeconds(1/frequency);
 
         StartCoroutine(Fire());
     }
