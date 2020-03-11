@@ -10,8 +10,9 @@ public class turretShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public int damage = 20;
 
-    void Start() {
+    void Empezar() {
         StartCoroutine(Fire());
+        StartCoroutine(Die());
     }
 
     // Update is called once per frame
@@ -38,6 +39,14 @@ public class turretShoot : MonoBehaviour
     //si desactivas el script las corutinas igualmente se ejecutan
     private void OnDisable() {
         StopAllCoroutines();    
+    }
+
+    IEnumerator Die() 
+    {
+        yield return new WaitForSeconds(5);
+        GetComponent<Animator>().SetTrigger("Dead");
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
     
     void Shoot()
