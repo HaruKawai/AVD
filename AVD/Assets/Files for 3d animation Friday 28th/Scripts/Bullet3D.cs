@@ -18,25 +18,12 @@ public class Bullet3D : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
-        //Debug.Log(collision.name);
-        //El usar mascaras de layers es para comprobar SOLO los layers que quieras
-        if (layermask == (layermask | (1 << collision.gameObject.layer)))
-        {
-            rb.Sleep();
-            GetComponent<Animator>().SetTrigger("Die");
-        }
-        /*
-        Enemy enemy = collision.GetComponent<Enemy>();
+        Enemy3D enemy = collision.GetComponent<Enemy3D>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
         }
-        if (collision.tag != "Item")
-        {
-            Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(gameObject);
-        }
-        */
     }
 
 }

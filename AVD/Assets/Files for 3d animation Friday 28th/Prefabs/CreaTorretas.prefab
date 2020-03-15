@@ -111,6 +111,7 @@ MonoBehaviour:
     type: 3}
   speed: 5
   damage: 10
+  hitsound: {fileID: 8300000, guid: 00221a0679278504d9fe43e677c1b232, type: 3}
 --- !u!54 &6409049893684117387
 Rigidbody:
   m_ObjectHideFlags: 0

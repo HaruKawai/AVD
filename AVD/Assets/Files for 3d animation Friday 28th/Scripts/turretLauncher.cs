@@ -8,7 +8,7 @@ public class turretLauncher : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("k"))
         {
             Shoot();
         }
@@ -17,7 +17,6 @@ public class turretLauncher : MonoBehaviour
 
     void Shoot()
     {
-        
         Instantiate(ballPrefab, transform.position, transform.rotation);
         
     
