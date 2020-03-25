@@ -13,6 +13,8 @@ public class MoveTo : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    public Transform Flag;
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
@@ -21,6 +23,8 @@ public class MoveTo : MonoBehaviour
             if (Physics.Raycast(ray.origin, ray.direction, out hitInfo))
             {
                 agent.destination = hitInfo.point;
+                Flag.position = hitInfo.point;
+                Flag.gameObject.GetComponent<Animator>().SetBool("active", true);
             }
         }
     }

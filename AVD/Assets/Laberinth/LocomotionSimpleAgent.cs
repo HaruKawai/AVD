@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// LocomotionSimpleAgent.cs
+using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -41,15 +42,29 @@ public class LocomotionSimpleAgent : MonoBehaviour
         anim.SetBool("move", shouldMove);
         anim.SetFloat("velx", velocity.x);
         anim.SetFloat("vely", velocity.y);
-        
+
         //GetComponent<LookAt>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
     }
-
-    void OnAnimatorMove()
+    private void OnTriggerEnter(Collider other)
     {
-        // Update position to agent position
-        transform.position = agent.nextPosition;
-
-      
+        // Debug.Log("disco trigger tag: "+ other.tag);
+        if (other.CompareTag("Disco"))
+        {
+            velocity = Vector2.zero;
+            anim.SetTrigger("dance");
+            other.GetComponentInParent<Animator>().SetTrigger("action");// in this case the animator is in the parent
+        }
+        else if (other.CompareTag("Flag"))
+        {
+            other.GetComponent<Animator>().SetBool("active", false);
+        } 
     }
+        void OnAnimatorMove()
+        {
+            // Update position to agent position
+            transform.position = agent.nextPosition;
+
+
+        }
+    
 }
