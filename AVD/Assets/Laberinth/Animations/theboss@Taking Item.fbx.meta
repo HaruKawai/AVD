@@ -1,47 +1,12 @@
 fileFormatVersion: 2
-guid: 791a47e953d3aab4fbea937062e4bcc1
+guid: 76795c6f2e5a40d40a7dbab2866d7a02
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cigar_Mat
-    second: {fileID: 2100000, guid: ba85f7571ac67724dacc9c2836c008ce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Clothes_MAT
-    second: {fileID: 2100000, guid: 57e13ce689df3ad4098aaf27b9584056, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Eyes_MAT
-    second: {fileID: 2100000, guid: a92b070fbaba6de49a5f8339f0b1e96b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Skin_MAT
-    second: {fileID: 2100000, guid: 110f401dac90ade40a1d14916bd52723, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_diffuse
-    second: {fileID: 2800000, guid: a4ab33619e6462143b4ff58bd47aaa89, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_normal
-    second: {fileID: 2800000, guid: a4a7d18c4dc827240a23d0d19966089a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boss_specular
-    second: {fileID: 2800000, guid: fd1f7cf9afc96164cb637674dcc25b7e, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -105,13 +70,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - ab2a31ea427b1ed418536effa44ff0ca
-  - 6ca297cfbe315c449b80cebccfd31915
-  - 8434059e502807e42bc44d13e9db55a4
-  - 76795c6f2e5a40d40a7dbab2866d7a02
-  - 7c38af0463ccd544ab710b6d0407cea4
-  - 4dfe6abb177b2c546b3eab68905c1d78
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -1003,11 +962,12 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 791a47e953d3aab4fbea937062e4bcc1,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

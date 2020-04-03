@@ -7,6 +7,8 @@ using UnityEngine.Playables;
 public class TimelineControl : MonoBehaviour
 {
     public List<PlayableDirector> playableDirectors;
+    public PlayableDirector playableDriectorChest;
+    public TimelineAsset timelineChest;
     public List<TimelineAsset> timelines;
 
 
@@ -16,6 +18,11 @@ public class TimelineControl : MonoBehaviour
         {
             playableDirector.Play();
         }
+    }
+
+    public void PlayChest()
+    {
+        playableDriectorChest.Play();
     }
 
     public void PlayFromTimelines(int index)

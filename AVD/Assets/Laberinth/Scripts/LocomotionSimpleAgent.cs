@@ -58,7 +58,13 @@ public class LocomotionSimpleAgent : MonoBehaviour
         else if (other.CompareTag("Flag"))
         {
             other.GetComponent<Animator>().SetBool("active", false);
-        } 
+        }
+        else if (other.CompareTag("Chest"))
+        {
+            anim.SetTrigger("takeItem");
+            other.GetComponent<Animator>().SetTrigger("Open");
+            GetComponent<TimelineControl>().PlayChest();
+        }
     }
         void OnAnimatorMove()
         {
