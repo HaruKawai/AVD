@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_diffuse
-    second: {fileID: 2800000, guid: e95ffdfdd8aebd94ab2d2a58d1f4da92, type: 3}
+    second: {fileID: 2800000, guid: 6650e24b0ffa4cb4783f600b17af328a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_normal
-    second: {fileID: 2800000, guid: 9090d4bf48dad1e45910aeeb8800a8fa, type: 3}
+    second: {fileID: 2800000, guid: 1ff6fcb24c7db4244bf63ddd53d64c95, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Peasant_Girl_specular
-    second: {fileID: 2800000, guid: 7caeed9b665317b46925ba6076664468, type: 3}
+    second: {fileID: 2800000, guid: f5365ae29f4378c41bf86bae5d209045, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0

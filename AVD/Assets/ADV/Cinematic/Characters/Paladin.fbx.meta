@@ -11,17 +11,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Paladin_diffuse
-    second: {fileID: 2800000, guid: 2f888e9d818329c4da7d7523f6481557, type: 3}
+    second: {fileID: 2800000, guid: 799d9df95ac718a4cbabcafac8e2285b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Paladin_normal
-    second: {fileID: 2800000, guid: 9dee49b3718223c4b8bffbfe38a494ff, type: 3}
+    second: {fileID: 2800000, guid: 66d601d5989a6ab4e941e5874931b1c7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Paladin_specular
-    second: {fileID: 2800000, guid: 1877f9f6b218c0348a300681d62f4cb3, type: 3}
+    second: {fileID: 2800000, guid: ca89cfa76d18e114dbae308baf6aa4ac, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -507,23 +507,23 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Paladin(Clone)
+    - name: paladin(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom
-      parentName: Paladin(Clone)
+      parentName: paladin(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom_Helmet
-      parentName: Paladin(Clone)
+      parentName: paladin(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips
-      parentName: Paladin(Clone)
+      parentName: paladin(Clone)
       position: {x: -0.00033593707, y: 0.95581925, z: 0.0049751555}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}

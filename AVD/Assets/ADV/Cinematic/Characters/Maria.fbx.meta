@@ -11,17 +11,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: maria_diffuse
-    second: {fileID: 2800000, guid: 9897f9ce031052742a16eef7f0e00668, type: 3}
+    second: {fileID: 2800000, guid: 669c920fd5b7a5b478cc342598286b71, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: maria_normal
-    second: {fileID: 2800000, guid: ca4ceb115b1ccc848aaca417c6c93f1b, type: 3}
+    second: {fileID: 2800000, guid: 4cf6c4ec959af0448a8a3b5ed01573a8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: maria_specular
-    second: {fileID: 2800000, guid: 1bbe85dbecfb8044f8d78f9665de2498, type: 3}
+    second: {fileID: 2800000, guid: b1857a1bbab8a99408ef30306bc238fd, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -507,18 +507,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Maria(Clone)
+    - name: maria(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Maria_J_J_Ong
-      parentName: Maria(Clone)
+      parentName: maria(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips
-      parentName: Maria(Clone)
+      parentName: maria(Clone)
       position: {x: 0.000014942404, y: 1.0524621, z: 0.018012615}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
