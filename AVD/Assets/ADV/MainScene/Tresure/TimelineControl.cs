@@ -61,6 +61,7 @@ public class TimelineControl : MonoBehaviour
             GetComponent<Animator>().SetTrigger("takeItem");
             other.GetComponent<Animator>().SetTrigger("Open");
             GetComponent<TimelineControl>().PlayChest();
+            other.GetComponent<ParticleSystem>().Play();
         }
     }
 

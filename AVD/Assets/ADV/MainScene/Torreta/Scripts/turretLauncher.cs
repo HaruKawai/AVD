@@ -6,6 +6,9 @@ public class turretLauncher : MonoBehaviour
 {
     public GameObject ballPrefab;
     public Transform Hand;
+    
+    public ParticleSystem particle;
+
     // Start is called before the first frame update
     void Update()
     {
@@ -14,6 +17,10 @@ public class turretLauncher : MonoBehaviour
             GetComponentInParent<Animator>().SetTrigger("Turret");
             //StartCoroutine(Shoot());
         }
+    }
+    void CastSpell() 
+    {
+        particle.Play();
     }
     void LaunchTurret()
     {

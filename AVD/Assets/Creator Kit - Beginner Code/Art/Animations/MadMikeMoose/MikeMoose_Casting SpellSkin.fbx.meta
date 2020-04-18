@@ -67,6 +67,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.15679441
+        functionName: CastSpell
+        data: 
+        objectReferenceParameter: {fileID: 3691244071631921629, guid: 61343d1f2c8ebba49b2ad7f743187f8f,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -109,6 +117,7 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips:
   - 3295173fef92fed489acd5c9a33d546d
+  - c44adfcc7ebe7824ab235dd525df5064
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
