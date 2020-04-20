@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: 8a273770bbf38e84db7e23754aa14aa5
+guid: 76be63a7b932f254795cb2198d9c9f06
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: Wide Arm Spell Casting
+  - first:
+      74: -7855513493680550219
+    second: Wide Arm Spell Casting (1)
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -39,7 +42,7 @@ ModelImporter:
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 212
+      lastFrame: 53
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -59,16 +62,45 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.6480836
-        functionName: LaunchTurret
+      - time: 0
+        functionName: CastSpell
         data: 
         objectReferenceParameter: {fileID: 3691244071631921629, guid: 61343d1f2c8ebba49b2ad7f743187f8f,
           type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.14982578
-        functionName: CastSpell
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Wide Arm Spell Casting (1)
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 53
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.66668713
+        functionName: LaunchTurret
         data: 
         objectReferenceParameter: {fileID: 3691244071631921629, guid: 61343d1f2c8ebba49b2ad7f743187f8f,
           type: 3}

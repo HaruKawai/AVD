@@ -14,7 +14,7 @@ public class turretLauncher : MonoBehaviour
     {
         if (Input.GetKeyDown("k"))
         {
-            GetComponentInParent<Animator>().SetTrigger("Turret");
+            GetComponent<Animator>().SetTrigger("Turret");
             //StartCoroutine(Shoot());
         }
     }
