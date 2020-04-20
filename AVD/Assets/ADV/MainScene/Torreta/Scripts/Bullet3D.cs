@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Bullet3D : MonoBehaviour
 {
-    public LayerMask layermask;
     public float speed = 5f;
     public int damage = 10;
     public Rigidbody rb;
-    public GameObject impactEffect;
     void Start()
     {
         rb = GetComponent<Rigidbody>();

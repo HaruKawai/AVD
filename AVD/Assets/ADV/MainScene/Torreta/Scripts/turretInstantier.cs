@@ -8,14 +8,18 @@ public class turretInstantier : MonoBehaviour
     public float speed = 5f;
     public int damage = 10;
     private Rigidbody rb;
+
+    // To start add force to the ball and is destroyed if doesn't collides with nothing
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //rb.velocity = transform.right * speed;
         rb.AddForce(transform.forward * speed, ForceMode.Impulse);
         Destroy(gameObject, 3f);
     }
 
+    // If collides with ground we look for another turret, destroy all turrets that already exists
+    // instantiate a turret in the position of the collision and destroy the ball
+    // if the ball doesnt collides with ground is also destroyed
     void OnCollisionEnter(Collision collision) 
     {
         if (collision.gameObject.CompareTag("ground"))
@@ -24,8 +28,9 @@ public class turretInstantier : MonoBehaviour
             GameObject[] torretes = GameObject.FindGameObjectsWithTag("torreta");
             foreach (GameObject torreta in torretes)
             {
-                //torreta.GetComponent<Animator>().SetTrigger("Dead");
-                GameObject.Destroy(torreta);
+                torreta.GetComponent<Animator>().SetTrigger("Dead");
+                torreta.GetComponent<AudioSource>().PlayOneShot(torreta.GetComponent<turretShoot>().explosion);
+                torreta.GetComponent<turretShoot>().particle.Play();
             }
             Instantiate(torretaPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
             Destroy(gameObject);

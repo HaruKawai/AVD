@@ -9,19 +9,22 @@ public class turretLauncher : MonoBehaviour
     
     public ParticleSystem particle;
 
-    // Start is called before the first frame update
+    // If the key "k" is down, activates the cast Spel animation of the main character
     void Update()
     {
         if (Input.GetKeyDown("k"))
         {
             GetComponent<Animator>().SetTrigger("Turret");
-            //StartCoroutine(Shoot());
         }
     }
+
+    //An event that is called to play the particles
     void CastSpell() 
     {
         particle.Play();
     }
+
+    //An event that is called to instantiate the turret
     void LaunchTurret()
     {
         Instantiate(ballPrefab, Hand.position, transform.rotation);
