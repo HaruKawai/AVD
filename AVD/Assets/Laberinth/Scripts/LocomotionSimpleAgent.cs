@@ -63,7 +63,7 @@ public class LocomotionSimpleAgent : MonoBehaviour
         {
             anim.SetTrigger("takeItem");
             other.GetComponent<Animator>().SetTrigger("Open");
-            GetComponent<TimelineControl>().PlayChest();
+            //GetComponent<TimelineControl>().PlayChest();
         }
     }
         void OnAnimatorMove()

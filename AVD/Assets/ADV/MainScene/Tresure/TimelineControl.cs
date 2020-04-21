@@ -19,12 +19,6 @@ public class TimelineControl : MonoBehaviour
             playableDirector.Play();
         }
     }
-
-    public void PlayChest()
-    {
-        playableDriectorChest.Play();
-    }
-
     public void PlayFromTimelines(int index)
     {
         TimelineAsset selectedAsset;
@@ -41,8 +35,19 @@ public class TimelineControl : MonoBehaviour
         playableDirectors[0].Play(selectedAsset);
     }
 
+
+    // When this collider Trigger enters in the chest's collider, if has the tag "Chest",
+    // Change de animation of the character to take Item, the animation of Chest to open it,
+    // Plays the timeline of the Chest and plays the particle system that is inside of the chest 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Chest"))
+        {
+            GetComponent<Animator>().SetTrigger("takeItem");
+            other.GetComponent<Animator>().SetTrigger("Open");
+            playableDriectorChest.Play();
+            other.GetComponent<ParticleSystem>().Play();
+        }
         // Debug.Log("disco trigger tag: "+ other.tag);
         /*
         if (other.CompareTag("Disco"))
@@ -56,13 +61,7 @@ public class TimelineControl : MonoBehaviour
             other.GetComponent<Animator>().SetBool("active", false);
         }
         else 
-        */if (other.CompareTag("Chest"))
-        {
-            GetComponent<Animator>().SetTrigger("takeItem");
-            other.GetComponent<Animator>().SetTrigger("Open");
-            GetComponent<TimelineControl>().PlayChest();
-            other.GetComponent<ParticleSystem>().Play();
-        }
+        */
     }
 
 }
