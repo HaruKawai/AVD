@@ -9,7 +9,7 @@ public class Bullet3D : MonoBehaviour
     public float speed = 5f;
 
     //Damages that does each bullet
-    public int damage = 3;
+    public int damage = 1;
     public Rigidbody rb;
 
     //Add velotcity to the bullet. if doesn't collides is selfdestryed after 3 secs.
@@ -17,7 +17,7 @@ public class Bullet3D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.right * speed;
-        rb.AddForce(transform.forward * speed, ForceMode.Impulse);
+        rb.AddForce(transform.forward * speed);
         Destroy(gameObject, 3f);
     }
 
@@ -37,7 +37,7 @@ public class Bullet3D : MonoBehaviour
             CharacterAudio audioEnemy = collision.GetComponent<CharacterAudio>();
             audioEnemy.Hit(collision.transform.position);
             int vida = dataEnemy.Stats.CurrentHealth;
-            dataEnemy.Stats.CurrentHealth = vida - damage;
+            dataEnemy.Stats.CurrentHealth = vida - 3;
         }
             Destroy(gameObject);
     }
